@@ -1,0 +1,110 @@
+<div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
+
+    <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+            <img class="w-100" src="../../assets/img/organizados.png" alt="First slide">
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+<hr>
+
+
+
+
+
+<div class="container px-1 px-md-4 py-5 mx-auto">
+    <div class="card border-0">
+        <div class="row d-flex justify-content-between px-3 top">
+            <div class="d-flex">
+                <h3>Como funciona a My tasks...<span class="text-primary font-weight-bold"></span></h3>
+            </div>
+
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-12">
+                <ul id="progressbar" class="text-center">
+                    <li class="active step0"></li>
+                    <li class="active step0"></li>
+                    <li class="active step0"></li>
+                    <li class="step0"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row justify-content-between top">
+            <div class="row d-flex icon-content">
+                <img class="icon" src="https://i.imgur.com/9nnc9Et.png">
+                <div class="d-flex flex-column">
+                    <p class="font-weight-bold">Postagem<br>tarefa</p>
+                </div>
+            </div>
+            <div class="row d-flex icon-content">
+                <img class="icon" src="https://i.imgur.com/u1AzR7w.png">
+                <div class="d-flex flex-column">
+                    <p class="font-weight-bold">checkbox<br></p>
+                </div>
+            </div>
+            <div class="row d-flex icon-content">
+                <img class="icon" src="https://i.imgur.com/TkPm63y.png">
+                <div class="d-flex flex-column">
+                    <p class="font-weight-bold">Filtro<br>título</p>
+                </div>
+            </div>
+            <div class="row d-flex icon-content">
+                <img class="icon" src="https://i.imgur.com/HdsziHP.png">
+                <div class="d-flex flex-column">
+                    <p class="font-weight-bold">Delete ou <br>edite</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+        <div class="container">
+
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner p-5">
+
+                    <div *ngFor="let noticia of noticias; let i = index" class="carousel-item {{i==0?'active':''}}">
+                        <div class="col-12 d-flex justify-content-center">
+                            <div class="col-8 card mb-3">
+                                <div class="row no-gutters">
+                                    <div class="col-md-6">
+                                        <img src="{{noticia.imagem}}" class="card-img mt-3" alt="...">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card-body">
+                                            <h5 class="card-title font-weight-bold">{{noticia.titulo}}</h5>
+                                            <p class="card-text">{{noticia.descricao}}</p>
+                                            <a href="{{noticia.linkExterno}}" target="_blank">Leia mais...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control bg-color" aria-hidden="true"><i class="fa fa-arrow-left" id="carouselArrow"></i></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control bg-color" aria-hidden="true"><i class="fa fa-arrow-right" id="carouselArrow"></i></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>

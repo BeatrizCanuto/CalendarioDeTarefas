@@ -1,0 +1,17 @@
+.navbar-nav {
+    font-size: 20px;
+}
+
+.navbar {
+    background-color: #ffffff;
+}
+
+#button-perfil{
+    border-radius: 25px;
+    background-color: #99a793;
+    border-width: 3px;
+    font-size: 10pt;
+    font-weight: bold;
+    height: 40px;
+}
+
